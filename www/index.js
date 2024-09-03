@@ -274,6 +274,7 @@ async function checkLetters() {
   
   console.log("Checking Letters: " + letters);
   await checkWords(mod, letters);
+
 }
 
 
@@ -288,6 +289,8 @@ async function init() {
   const wasm_handler = new WasmHandler();
   mod = await instantiateWasmModule(wasm_handler);
   await loadWordData(mod);
+
+  
   //mod.instance.exports.testPrint();
   //mod.instance.exports.printWordData(37);
   //mod.instance.exports.manyWords(false);
@@ -301,6 +304,8 @@ async function init() {
       char_divs[char].innerText = char
       chart_div.appendChild(char_divs[char]);
   });
+
+  await checkLetters();
   
 }
 
