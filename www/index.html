@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Prevent favicon request --> 
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <title>WASM Demo</title>
+  </head>
+  <body>
+    <h3>WASM Demo</h3>
+    <div id="setup">
+      <input type="text" id="avail-chars">
+      <button id="setup-btn" onclick="checkLetters()">Set Up</button>
+    </div>
+    <div id="word-entry">
+      <span id="text-area" contenteditable=> </span>
+      
+    </div>
+    <div id="letter-chart"></div>
+    <div id="word-list"></div>
+  </body>
+  <script src="index.js"></script>
+</html>

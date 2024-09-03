@@ -1,0 +1,52 @@
+#word-list {
+    width: 20dvw;
+    margin-left: 5px;
+    margin-block: 5px;
+    background-color: beige;
+}
+
+#text-area {
+    display: inline-block;
+    color: white;
+    width: 20dvw;
+    margin-left: 5px;
+    margin-block: 5px;
+    background-color: green;
+}
+
+#text-area.invalid {
+    background-color: red;
+}
+
+#letter-chart {
+    height: 6em;
+}
+
+.letter-box {
+    display: inline-block;
+    height: 0em;
+    width: 20px;
+    background-color: lightgreen;
+    align-content: center;
+    transition: all 0.25s ;
+}
+
+.letter-box.size0 {
+    color: brown;
+}
+
+.letter-box.size1 {
+    height: 1em;
+}
+.letter-box.size2 {
+    height: 2em;
+}
+.letter-box.size3 {
+    height: 3em;
+}
+.letter-box.size4 {
+    height: 4em;
+}
+.letter-box.size5 {
+    height: 5em;
+}
